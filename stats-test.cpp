@@ -20,7 +20,7 @@ TEST_CASE("reports average, minimum and maximum") {
     
     //Design the REQUIRE statement here.
     //Use http://www.cplusplus.com/reference/cmath/isnan/
-}*/
+}
 
 TEST_CASE("raises alerts when max is greater than threshold") {
     EmailAlert emailAlert;
@@ -33,4 +33,4 @@ TEST_CASE("raises alerts when max is greater than threshold") {
 
     REQUIRE(emailAlert.emailSent);
     REQUIRE(ledAlert.ledGlows);
-}
+}*/
