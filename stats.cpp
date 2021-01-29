@@ -1,5 +1,5 @@
 #include "stats.h"
-
+#include <math.h>
 #include <algorithm>
 
 using namespace Statistics;
@@ -12,9 +12,9 @@ S.min = *std::min_element(vect.begin(),vect.end());
 S.max = *std::max_element(vect.begin(),vect.end());
 if(vect.size() == 0)
 	{
-		S.average = NAN;
-    S.min = NAN;
-    S.max = NAN;
+	S.average = NAN;
+    	S.min = NAN;
+    	S.max = NAN;
 	}
   else
   {
