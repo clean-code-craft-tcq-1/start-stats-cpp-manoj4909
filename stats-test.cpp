@@ -2,7 +2,6 @@
 
 #include "catch.hpp"
 #include "stats.h"
-
 #include <cmath>
 
 TEST_CASE("reports average, minimum and maximum") {
@@ -20,9 +19,9 @@ TEST_CASE("average is NaN for empty array") {
     
     //Design the REQUIRE statement here.
     //Use http://www.cplusplus.com/reference/cmath/isnan/
-    REQUIRE(isnan(computedStats.min));
-    REQUIRE(isnan(computedStats.max));
-    REQUIRE(isnan(computedStats.average));
+    REQUIRE(std::isnan(computedStats.min));
+    REQUIRE(std::isnan(computedStats.max));
+    REQUIRE(std::isnan(computedStats.average));
 }
 
 /*TEST_CASE("raises alerts when max is greater than threshold") {
